@@ -1,0 +1,34 @@
+.doctor-container {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .doctor-photo {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .doctor-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .doctor-info {
+    flex: 2;
+    padding-left: 2rem;
+  }
+  
+  .doctor-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .doctor-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  

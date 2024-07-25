@@ -1,0 +1,88 @@
+/* Container for image and overlay content */
+.image-container {
+    position: relative; /* Allows absolute positioning of the content */
+    text-align: center; /* Centers text within the container */
+    margin: 20px; /* Adds space around the image container */
+  }
+  
+  .background-image {
+    width: 100%; /* Ensures the image scales to its container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes bottom space beneath the image */
+  }
+  
+  /* Overlay content (heading, tagline, and button) */
+  .content-overlay {
+    position: absolute; /* Positions the overlay content within the container */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the position to truly center the content */
+    color: white; /* Sets the text color to white */
+    text-align: center; /* Centers the text within the overlay */
+    padding: 20px; /* Adds padding around the content */
+    background: transparent; /* Adds a semi-transparent background for better text readability */
+    border-radius: 10px; /* Rounds the corners of the overlay */
+  }
+  
+  /* Heading style */
+  .heading {
+    font-size: 2em; /* Sets the font size for the heading */
+    margin: 0 0 10px; /* Adds space below the heading */
+  }
+  
+  /* Tagline style */
+  .tagline {
+    font-size: 1em; /* Sets the font size for the tagline */
+    margin: 0 0 20px; /* Adds space below the tagline */
+  }
+  
+  /* Button style */
+  .appointment-button {
+    padding: 10px 20px; /* Adds padding to the button */
+    font-size: 16px; /* Increases the font size */
+    color: #fff; /* Sets the text color to white */
+    background-color: #007bff; /* Sets the background color of the button */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow to the button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+  }
+  
+  /* Button hover effect */
+  .appointment-button:hover {
+    background-color: #0056b3; /* Changes the button color on hover */
+    transform: translateY(-2px); /* Slightly moves the button up on hover */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 1.5em; /* Adjusts the font size for smaller screens */
+    }
+    
+    .tagline {
+      font-size: 0.9em; /* Adjusts the font size for smaller screens */
+    }
+    
+    .appointment-button {
+      font-size: 14px; /* Adjusts the button font size for smaller screens */
+      padding: 8px 16px; /* Adjusts the button padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 1.2em; /* Adjusts the font size for very small screens */
+    }
+    
+    .tagline {
+      font-size: 0.8em; /* Adjusts the font size for very small screens */
+    }
+    
+    .appointment-button {
+      font-size: 12px; /* Adjusts the button font size for very small screens */
+      padding: 6px 12px; /* Adjusts the button padding for very small screens */
+    }
+  }
+  
